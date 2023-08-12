@@ -11,19 +11,20 @@
 function buttonStartClick() {
   let randomChoice = Math.random();
   if (randomChoice > 0.5) {
-    alert('The car started up. There is been a movement.');
+    // Поменял Все alert-вызовы на console.log-и
+    console.log('The car started up. There is been a movement.');
 
     buttonStart.classList.add('hide');
 
     function carCrashed() {
-      alert('Forced stop');
+      console.log('Forced stop');
       buttonStart.classList.remove('hide');
     }
     window.setTimeout(carCrashed, 5000);
-    alert('We wait Crash');
+    console.log('We wait Crash');
     
   } else {
-    alert('Something went wrong.');
+    console.log('Something went wrong.');
   }
 }
 
