@@ -32,8 +32,13 @@ function buttonStartClick() {
 
     function againOff() {
       statusCar1.innerHTML = 'off';
+<<<<<<< HEAD
     statusCar1.classList.remove('backgroundStatus');  
     buttonStart.classList.remove('hide');        // Возвращаю видимость Кнопке Start
+=======
+    statusCar1.classList.remove('backgroundStatus');
+
+>>>>>>> 863b0a9 (Added status - when the car stops - Red color.)
     }
     window.setTimeout(againOff, 8000);
 
