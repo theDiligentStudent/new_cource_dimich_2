@@ -25,33 +25,26 @@ function buttonStartClick() {
       console.log('Forced stop');
       buttonStart.classList.remove('hide');
     statusCar1.innerHTML = 'Stop';
+    statusCar1.classList.add('backgroundStatus');
 
     }
     window.setTimeout(carCrashed, 5000);
 
     function againOff() {
       statusCar1.innerHTML = 'off';
+    statusCar1.classList.remove('backgroundStatus');
+
     }
     window.setTimeout(againOff, 8000);
-
-
-    
 
     console.log('We wait Crash');
   } else {
     console.log('Something went wrong.');
   }
 
-  // function restart() {
-  //   statusCar1.innerHTML = 'off';
-  // }
-  // window.setTimeout(restart, 3000)
 }
 
-// function restart() {
-//   statusCar1.innerHTML = 'off';
-// }
-// window.setTimeout(restart, 3000)
+
 
 
 let buttonStart = document.querySelector('#button_click_1');
