@@ -23,7 +23,7 @@ function buttonStartClick() {
 
     function carCrashed() {
       console.log('Forced stop');
-      buttonStart.classList.remove('hide');
+      // buttonStart.classList.remove('hide');        Верну видимость Кнопке Start -- ниже...., когда статус 'Stop' сменится на 'off'
     statusCar1.innerHTML = 'Stop';
     statusCar1.classList.add('backgroundStatus');
 
@@ -32,8 +32,8 @@ function buttonStartClick() {
 
     function againOff() {
       statusCar1.innerHTML = 'off';
-    statusCar1.classList.remove('backgroundStatus');
-
+    statusCar1.classList.remove('backgroundStatus');  
+    buttonStart.classList.remove('hide');        // Возвращаю видимость Кнопке Start
     }
     window.setTimeout(againOff, 8000);
 
