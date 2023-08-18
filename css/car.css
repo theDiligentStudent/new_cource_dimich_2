@@ -2,31 +2,54 @@
    т.к. я начал делать сам - Сразу через Об. и Ко.-р - у меня немного не вышло во Втором видео так, как у Димки
       Поэтому в отдельной папке я решил Всё Повторить За Ним 
       12/08/23    
-      14/08/23 Lesson 3 */
+      14/08/23 Lesson 3 
+   18/08/23    ---- 
+          долго /много дней/ НЕ занимался -  поэтому сейчас попробую повторить весь пройденный (который успел пройти) материал - по памяти*/
 
 
-
- .cars {
-  margin: 20px;
- }     
 
 .car {
-  /* button {
-    margin: 20px;
-  } */
-  .hide {
-    display: none;
-  }
+   margin: 20px;
+   .info-panel {
+      margin: 10px;
+   }
+       /* НЕ получается у меня НИкак сделать вложенность для Класса .hide */
+   /* .button-car {
+      .hide {
+         display: none;
+      }
+   }  */
 }
 
-/* .car { */
-  /* .cars { */
-    .car .cars button  {
-      margin: 5px;
-    }
-  /* } */
-/* } */
+       /* НЕ получается у меня НИкак сделать вложенность для Класса .hide */
+   /* .hide {
+      display: none;
+   } */
+   
+   /* Подгружается Класс .hide только Так..... - БЕЗ Вложенности */
+   .hide {
+      display: none;
+   }
 
-.backgroundStatus {
-  background-color: red;
+
+.car .info-panel {
+   .bgc-span{
+      background-color: yellowgreen;
+   }
+   .status-color-1{
+      font-size: 20px;
+      font-weight: bold;
+      background-color: rgb(153, 51, 255);
+   }
+   .status-color-3 {
+      font-size: 16px;
+      font-weight: normal;
+      background-color: red;
+   }
+   .status-color-4 {
+      font-size: 16px;
+      font-weight: normal;
+      background-color: yellow;
+   }
 }
+   
