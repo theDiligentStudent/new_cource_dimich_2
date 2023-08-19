@@ -66,3 +66,21 @@ function onButtonStartClick() {
     window.setTimeout(buttonDisappearing, 2000);
   }
 }
+
+
+let buttonForEnter = document.querySelector('#btn_for_enter');
+buttonForEnter.addEventListener('keydown', onEnterKeyPress);
+
+// function onEnterKeyPress() {
+//   if(event.keyCode === 13) {
+//     event.preventDefault();
+//     alert('Hi!');
+//   }
+// }
+function onEnterKeyPress() {
+  if(event.keyCode === 13) {
+    event.preventDefault();
+    alert('Hi!');
+  }
+}
+

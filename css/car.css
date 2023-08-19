@@ -67,4 +67,11 @@
       background-color: yellow;
    }
 }
-   
+
+
+.car .btn-for-enter {
+   margin: 40px;
+}
+.car #btn_for_enter {
+   background-color: deeppink;
+}
