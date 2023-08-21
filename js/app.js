@@ -5,13 +5,10 @@
 //       14/08/23 Lesson 3
 // 18/08/23    ----
 // долго /много дней/ НЕ занимался -  поэтому сейчас попробую повторить весь пройденный (который успел пройти) материал - по памяти
-      //  19/08/23      Дорабатываю СВОЮ машинку ПО-СВОЕМУ
+//  19/08/23      Дорабатываю СВОЮ машинку ПО-СВОЕМУ
 
-      // Also 19/08/23  Создаю в В.-е main  НОВУЮ В.-у
-      // чтобы мою - УЖЕ ПОЛНОСТЬЮ ГОТОВУЮ - машинку, с этого (готового) момента РЕФАКТОРИТЬ   
-
-
-
+// Also 19/08/23  Создаю в В.-е main  НОВУЮ В.-у
+// чтобы мою - УЖЕ ПОЛНОСТЬЮ ГОТОВУЮ - машинку, с этого (готового) момента РЕФАКТОРИТЬ
 
 let statusCar = document.querySelector('#car_status');
 let buttonStart = document.querySelector('#button_start');
@@ -54,7 +51,7 @@ function onButtonStartClick() {
     }
     window.setTimeout(tryAgain, 10000);
   } else {
-    statusCar.innerHTML = 'Doesn\'t start!';
+    statusCar.innerHTML = "Doesn't start!";
     statusCar.classList.add('status-color-3');
     buttonStart.classList.add('hide');
 
@@ -67,9 +64,12 @@ function onButtonStartClick() {
   }
 }
 
-
-let buttonForEnter = document.querySelector('#btn_for_enter');
-buttonForEnter.addEventListener('keydown', onEnterKeyPress);
+// let buttonForEnter = document.querySelector('#btn_for_enter');
+let buttonForEnter = document.getElementById('btn_for_enter');
+// buttonForEnter.addEventListener('click', function(){
+//   alert('Hi!');
+// });
+// buttonForEnter.addEventListener('keydown', onEnterKeyPress);
 
 // function onEnterKeyPress() {
 //   if(event.keyCode === 13) {
@@ -77,10 +77,18 @@ buttonForEnter.addEventListener('keydown', onEnterKeyPress);
 //     alert('Hi!');
 //   }
 // }
-function onEnterKeyPress() {
-  if(event.keyCode === 13) {
+// function onEnterKeyPress() {
+//   if (event.keyCode === 13) {
+//     event.preventDefault();
+//     alert('Hi!');
+//   }
+// }
+
+buttonForEnter.addEventListener('keydown', function (event) {
+  // if(event.keyCode === 13) {
+  if (event.key === 'Enter') {
     event.preventDefault();
+    console.log('Hi!');
     alert('Hi!');
   }
-}
-
+});
