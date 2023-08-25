@@ -10,8 +10,14 @@
 // Also 19/08/23  Создаю в В.-е main  НОВУЮ В.-у
 // чтобы мою - УЖЕ ПОЛНОСТЬЮ ГОТОВУЮ - машинку, с этого (готового) момента РЕФАКТОРИТЬ
 
+
+// 25/08/23      Кажется Всё!! Закончил с Экспериментами в своём-Димыном К.-е 
+//      Сделал Статус для Коробки Передач - Переключение с нейтрали на Первую Передачу. Добавил этому Статусу Зелёно-жёлтый фон во всё время Работы Двигателя.   
+
+
 let statusCar = document.querySelector('#car_status');
 let buttonStart = document.querySelector('#button_start');
+let transmStatus = document.querySelector('#transm_status');
 
 buttonStart.addEventListener('click', onButtonStartClick);
 
@@ -20,15 +26,24 @@ function onButtonStartClick() {
 
   if (fiftyFifty > 0.5) {
     statusCar.innerHTML = 'Go!';
+    function firstGear() {
+      transmStatus.innerHTML = 'First gear';
+      transmStatus.classList.add('transm-status-font');
+    }
+    window.setTimeout(firstGear, 2000);
     statusCar.classList.add('status-color-1');
     buttonStart.classList.add('hide');
+    transmStatus.classList.add('transm-color');
 
     function buttonDisappearing() {
       statusCar.innerHTML = 'Engine Crashed!';
+      transmStatus.innerHTML = 'neutral';
       statusCar.classList.add('status-color-2');
       buttonStart.innerHTML = 'STOP';
-      buttonStart.classList.remove('hide');
       buttonStart.classList.add('button-color-1');
+      buttonStart.classList.remove('hide');
+      transmStatus.classList.remove('transm-color');
+      transmStatus.classList.remove('transm-status-font');
     }
     window.setTimeout(buttonDisappearing, 5000);
 

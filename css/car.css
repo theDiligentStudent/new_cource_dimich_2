@@ -9,6 +9,10 @@
           
                            Also 19/08/23  Создаю в В.-е main  НОВУЮ В.-у
                 чтобы мою - УЖЕ ПОЛНОСТЬЮ ГОТОВУЮ - машинку, с этого (готового) момента РЕФАКТОРИТЬ   
+
+                25/08/23      Кажется Всё!! Закончил с Экспериментами в своём-Димыном К.-е 
+     Сделал Статус для Коробки Передач - Переключение с нейтрали на Первую Передачу. Добавил этому Статусу Зелёно-жёлтый фон во всё время Работы Двигателя.  
+
 */
 
 
@@ -78,6 +82,19 @@
    background-color: deeppink;
 }
 
-.status-transmission {
+.car .status-transmission {
    margin: 10px;
+}
+.car .status-transmission {
+   .transm-color{
+      background-color: yellowgreen;
+   }
+}
+/* .transm-color{
+   background-color: yellowgreen;
+} */
+.car .status-transmission {
+   .transm-status-font{
+      font-size: 18px;
+   }
 }
