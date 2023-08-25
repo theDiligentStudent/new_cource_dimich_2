@@ -34,7 +34,9 @@
    
    /* Подгружается Класс .hide только Так..... - БЕЗ Вложенности */
    .hide {
-      display: none;
+      /* display: none; */
+      /* opacity: 0; */
+      visibility: hidden;
    }
 
 
@@ -74,4 +76,8 @@
 }
 .car #btn_for_enter {
    background-color: deeppink;
+}
+
+.status-transmission {
+   margin: 10px;
 }
